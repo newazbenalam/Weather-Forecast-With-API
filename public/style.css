@@ -35,7 +35,8 @@ a {
 }
 
 body{
-  background-color: azure;
+  /* background-color: azure; */
+  background: linear-gradient(0deg, var(--primary-color) 0%, var(--bg-color) 60%);
 }
 
 /* nav {
@@ -137,11 +138,16 @@ nav a, nav div, .weekly-card, .card{
 }
 
 .card {
+  display: flex;
+  /* vertical-align: middle; */
   width: 10rem;
+  text-align: center;
+  justify-content: center;
+  /* justify-items: center; */
 }
 
 #hero {
-  /* padding-top: 15vh; */
+  padding-top: 5vh;
   background-color: var(--bg-color);
   background: linear-gradient(0deg, var(--primary-color) 0%, var(--bg-color) 60%);
   color: var(--text-color);
