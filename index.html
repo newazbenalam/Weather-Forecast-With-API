@@ -18,7 +18,7 @@
     </div>
     <form action="" method="post">
       <input class="text-area" placeholder="Location..." type="search" name="search" data-vaue="">
-      <button type="submit"></button>
+      <button hidden type="submit"></button>
     </form>
     <div>
       <!-- <a href="#" class="toggle-temp">27°C</a> -->
@@ -27,13 +27,35 @@
     </div>
   </nav>
   <section id="hero">
+    </hero-row>
     <hero-row>
       <div>
-        <h1 class="temp-indicator">25°C</h1>
+        <div>
+          <img class="weather-preview" src="public/images/animated/rainy-2.svg" alt="">
+          <h1 class="temp-indicator">25°C</h1>
+        </div>
         <p class="day">Monday, </p>
+        <div class="location">
+          Dhakka, Bangladesh
+        </div>
       </div>
-      <div class="location">
-        Location: Dhakka
+      <div>
+        <p style="margin-bottom: 20px; filter: drop-shadow(0px 0px 100px #929094bb); font-weight: 500;">Today's Highlight</p>
+        <section>
+          <div class="weekly-card">
+            <div class="h-card"><p>UV Index</p>
+              <p class="value">5</p>
+            </div>
+            <div class="h-card"><p>Wind Status</p>
+              <p class="value" style="top: -5px;">7.70</p><p style="opacity: 75%; color: var(--text-color); position: relative; bottom: 7px; font-size: 0.6rem;">km/h</p>
+            </div>
+            <div class="h-card"><p>Humidity</p>
+              <p class="value">12%</p>
+            </div>
+            <div class="h-card"><p>Air Quality</p>
+              <p class="value">105</p>
+            </div>
+          </div>
       </div>
     </hero-row>
   </section>
