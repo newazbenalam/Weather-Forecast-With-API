@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 :root {
-  --bg-color: #e3e3fcb4;
+  --bg-color: #efe3fcb4;
   --main-color: #2c2d36;
   --text-color: rgba(36, 36, 36, 0.986);
   --text-color-2: rgba(255, 255, 255, 0.986);
-  --primary-color: #eaf7fdc0;
+  --primary-color: #eafdf475;
   --border-color: rgb(231, 226, 236);
   --hover-color: rgba(182, 230, 230, 0.616);
   --box-color: rgba(255, 255, 255, 0.356);
@@ -18,15 +18,22 @@
   margin: 0;
 }
 
-body, html, a, li, ul {
+body, html, a, li, ul, div{
   text-decoration: none;
   list-style-type: none;
+  text-align: center;
+}
+
+h4{
+  font-weight: 500;
+  padding-bottom: 10px;
 }
 
 html {
   font-family: 'Poppins', Helvetica, 'Overpass', sans-serif, Arial;
   scroll-behavior: smooth;
   font-size: larger;
+  overflow-x: hidden;
 }
 
 a {
@@ -35,8 +42,9 @@ a {
 }
 
 body{
-  /* background-color: azure; */
-  background: linear-gradient(0deg, var(--primary-color) 0%, var(--bg-color) 60%);
+  background-color: var(--primary-color);
+  fill-opacity: 100%;
+  /* background: linear-gradient(0deg, var(--primary-color) 0%, var(--bg-color) 60%); */
 }
 
 /* nav {
@@ -115,8 +123,8 @@ nav div {
 .active {
   opacity: 100%;
 }
-/* 
-nav a, nav div, .weekly-card, .card{
+
+/* nav a, nav div, .weekly-card, .card{
   border: 1px solid black;
 } */
 
@@ -124,38 +132,61 @@ nav a, nav div, .weekly-card, .card{
   height: 100vh;
 } */
 
-
-.weekly-card{
+.weekly-card {
   display: flex;
-  /* width: 50px; */
+  /* height: 50px; */
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  gap: 1rem;
+  gap: 1.5rem;
   /* padding: 0 10%; */
 }
+/* .weekly-card::before{
+  content: "Weekly";
+} */
 
 .card {
   display: flex;
   /* vertical-align: middle; */
-  width: 10rem;
+  width: 5rem;
+  height: 5rem;
+  font-size: medium;
   text-align: center;
   justify-content: center;
   /* justify-items: center; */
 }
 
 #hero {
-  padding-top: 5vh;
-  background-color: var(--bg-color);
+  padding-top: 46px;
+  /* background-color: var(--bg-color); */
   background: linear-gradient(0deg, var(--primary-color) 0%, var(--bg-color) 60%);
   color: var(--text-color);
   text-align: center;
   height: 75vh;
 }
 
-@media (max-width: 920px) {
+footer {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  background-color: var(--main-color);
+  color: white;
+  padding: 50px 50px 10px 50px;
+}
+footer div:nth-child(1) {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer div:nth-child(1) div{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+@media (max-width: 980px) {
   .text-area, form {
     display: none;
   }
@@ -168,5 +199,8 @@ nav a, nav div, .weekly-card, .card{
   }
   .weekly-card{
     padding: 0px 10%;
+  }
+  footer {
+    padding: 50px 0px 10px 0px;
   }
 }
