@@ -13,23 +13,31 @@
   <nav>
     <a href="" class="nav-title">Weather</a>
     <div>
-      <a href="" class="day-bar active">Today</a>
-      <a href="" class="day-bar #active">Week</a>
+      <a href="#hero" class="day-bar active">Today</a>
+      <a href="#week" class="day-bar #active">Week</a>
     </div>
     <form action="" method="post">
       <input class="text-area" placeholder="Location..." type="search" name="search" data-vaue="">
       <button type="submit"></button>
     </form>
     <div>
-      <a href="#" class="toggle-temp">27°C</a>
-      <a href="#" class="dark-mode">☾</a>
-      <a href="#" class="profile">P</a>
+      <!-- <a href="#" class="toggle-temp">27°C</a> -->
+      <a href="#" onclick="darkMode()" class="dark-mode">☾</a>
+      <a href="#"><img class="profile-img" src="public/images/pngwing.com.png" alt="profile_image"></a>
     </div>
   </nav>
   <section id="hero">
-    Hello, World!
+    <hero-row>
+      <div>
+        <h1 class="temp-indicator">25°C</h1>
+        <p class="day">Monday, </p>
+      </div>
+      <div class="location">
+        Location: Dhakka
+      </div>
+    </hero-row>
   </section>
-  <section>
+  <section id="week">
     <div><h4>Weekly Forecast</h4></div>
     <div class="weekly-card">
       <div class="card">Sunday</div>
@@ -47,7 +55,7 @@
         <a style="color: var(--text-color-2); font-weight:lighter; font-size:smaller; filter: opacity(85%)" href="mailto:newazbenalam@gmail.com"><em>newazbenalam@gmail.com</em></a>
       </div>
       <div style="cursor: pointer; color: var(--text-color-2);">
-        <span>Linkdin</span>
+        <span>Linkedin</span>
         <span>Facebook</span>
         <a style="color: var(--text-color-2);" href="https://github.com/newazbenalam"> <span>GitHub</span></a>
       </div>

@@ -10,7 +10,7 @@
   --border-color: rgb(231, 226, 236);
   --hover-color: rgba(182, 230, 230, 0.616);
   --box-color: rgba(255, 255, 255, 0.356);
-  --blur-intensity: 2px;
+  --blur-intensity: 10px;
 }
 
 *{
@@ -43,7 +43,7 @@ a {
 
 body{
   background-color: var(--primary-color);
-  fill-opacity: 100%;
+
   /* background: linear-gradient(0deg, var(--primary-color) 0%, var(--bg-color) 60%); */
 }
 
@@ -58,10 +58,11 @@ body{
 } */
 
 nav img {
-  margin: -20px -20px -20px -20px;
-  height: 5rem;
-  color: var(--text-color);
-  filter: grayscale(100%) ;
+  margin: 5px 1px 0px 0px;
+  padding: 0px 10px 0px 10px;
+  height: 1rem;
+  /* color: var(--text-color); */
+  /* filter: grayscale(100%) ; */
 }
 
 nav{
@@ -87,7 +88,7 @@ nav div {
   display: flex;
   /* flex-grow: 1; */
   flex-direction: row;
-  gap: 1rem;
+  gap: 0.5rem;
   justify-content: flex-start;
 }
 
@@ -95,6 +96,7 @@ nav div {
   font-family: 'Poppins';
   font-weight: 600;
   font-size: larger;
+  padding-left: 10px;
 }
 .nav-title::after{
   content: " Forecast";
@@ -155,7 +157,22 @@ nav div {
   font-size: medium;
   text-align: center;
   justify-content: center;
+  cursor: pointer;
   /* justify-items: center; */
+}
+
+/* .profile-img {
+  width: auto;
+  height: 20px;
+}
+img{
+  padding: 0;
+  margin: 0;
+} */
+
+.dark-mode{
+  padding:1px 10px 0px 10px;
+  transform: scale(1.3);
 }
 
 #hero {
@@ -165,7 +182,36 @@ nav div {
   color: var(--text-color);
   text-align: center;
   height: 75vh;
+  position: relative;;
 }
+
+hero-row{
+  width: 80%;
+  /* max-width: 1200px; */
+  margin: auto;
+  padding: 0 10%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  align-content: flex-start;
+  /* justify-items: center; */
+  bottom: 20%;
+  z-index: 1;
+  flex-direction: row;
+}
+
+.temp-indicator {
+  font-size: 8rem;
+  font-weight: 300;
+}
+hero-row .day::after{
+  content: "16:00";
+  opacity: 50%;
+}
+/* hero-row div {
+  width: 250px;
+} */
 
 footer {
   display: flex;
@@ -202,5 +248,24 @@ footer div:nth-child(1) div{
   }
   footer {
     padding: 50px 0px 10px 0px;
+  }
+  hero-row .temp-indicator {
+    font-size: 5rem;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 560px) {
+  hero-row  {
+    flex-direction: column-reverse !important;;
+  }
+  hero-row .location {
+    opacity: 80%;
+    font-weight: 300;
+    font-size: large;
+  }
+  hero-row .day::after{
+    content: "16:00";
+    opacity: 80%;
   }
 }
