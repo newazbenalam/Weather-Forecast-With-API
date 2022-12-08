@@ -197,7 +197,6 @@ hero-row{
   justify-content: space-between;
   /* align-items: center; */
   align-content: flex-start;
-  /* justify-items: center; */
   bottom: 20%;
   z-index: 1;
   flex-direction: row;

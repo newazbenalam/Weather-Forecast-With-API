@@ -8,7 +8,6 @@ function darkMode() {
   } else {
       document.body.style.backgroundColor = "black";
       document.getElementById("hero").style.background = "linear-gradient(0deg, #261b2e 0%, #868bb9 60%)";
-      ocument.getElementByTagName("a")[0-10].style.background = "white";
       document.body.style.color = "white";
       document.body.style.dev.color = "white";
   }
