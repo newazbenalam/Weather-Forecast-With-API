@@ -31,12 +31,23 @@
     <hero-row>
       <div>
         <div>
-          <img class="weather-preview" src="public/images/animated/rainy-2.svg" alt="">
-          <h1 class="temp-indicator">25°C</h1>
+          <img class="weather-preview" src="public/images/animated/rainy-2.svg" alt="temperature">
+          <div class="" style="position: relative; display: flex; justify-content: center; flex-wrap: unwarp;  bottom: -50px; transform: scale(0.7); gap: 0; min-width: 253px; margin: auto;">
+            <div class="t-card h-card" style="background: none; width: 100px;" ><p>Min Temp</p>
+              <p id="min_temp" class="value" style=" font-size: 1.5rem;">5</p>
+            </div>
+            <div class="t-card h-card" style="background: none; width: 100px;"><p>Max Temp</p>
+              <p id="max_temp" class="value" style=" font-size: 1.5rem;">5</p>
+            </div>
+          </div>
+          <h1 id="temp" class="temp-indicator">25°C</h1>
+          <div id="condition" style="font-weight: 500; opacity: 65%; position: relative; bottom: 30px;">
+            Null
+          </div>
         </div>
         <p class="day">Monday, </p>
-        <div class="location" style="padding-bottom: 45px;">
-          Dhakka, Bangladesh
+        <div id="locat" class="location" style="padding-bottom: 45px;">
+          Dhakka, Null
         </div>
       </div>
       <div>
@@ -44,16 +55,28 @@
         <section>
           <div class="weekly-card">
             <div class="h-card"><p>UV Index</p>
-              <p class="value">5</p>
+              <p id="uv_index" class="value">5</p>
             </div>
             <div class="h-card"><p>Wind Status</p>
-              <p class="value" style="top: -5px;">7.70</p><p style="opacity: 75%; color: var(--text-color); position: relative; bottom: 7px; font-size: 0.6rem;">km/h</p>
+              <p id="wind"   class="value" style="top: -5px;">7.70</p><p style="opacity: 75%; color: var(--text-color); position: relative; bottom: 7px; font-size: 0.6rem;">km/h</p>
             </div>
             <div class="h-card"><p>Humidity</p>
-              <p class="value">12%</p>
+              <p id="humidity" class="value">12%</p>
             </div>
             <div class="h-card"><p>Air Quality</p>
-              <p class="value">105</p>
+              <p id="air" class="value">105</p>
+            </div>
+            <div class="h-card"><p>Pressure</p>
+              <p id="pressure" class="value">1020</p>
+            </div>
+            <div class="h-card"><p>Feels Like</p>
+              <p id="feels_temp" class="value">1020</p>
+            </div>
+            <div class="h-card"><p>Visibility</p>
+              <p id="visibility" class="value">1020</p>
+            </div>
+            <div class="h-card"><p>Clouds</p>
+              <p id="clouds" class="value">1020</p>
             </div>
           </div>
       </div>
@@ -62,13 +85,13 @@
   <section id="week">
     <div><h4>Weekly Forecast</h4></div>
     <div class="weekly-card">
-      <div class="card">Sunday</div>
-      <div class="card">Monday</div>
-      <div class="card">Tuesday</div>
-      <div class="card">Wedneday</div>
-      <div class="card">Tuesday</div>
-      <div class="card">Friday</div>
-    </div>
+      <div class="h-card" style=" color: #585858; opacity: 70%">Sunday <img src="public/images/animated/cloudy-day-3.svg" alt=""></div>
+      <div class="h-card" style=" color: #585858; opacity: 70%">Monday <img src="public/images/animated/rainy-7.svg" alt=""></div>
+      <div class="h-card" style=" color: #585858; opacity: 70%">Tuesday <img src="public/images/animated/snowy-2.svg" alt=""></div>
+      <div class="h-card" style=" color: #585858; opacity: 70%">Wedneday <img src="public/images/animated/thunder.svg" alt=""></div>
+      <div class="h-card" style=" color: #585858; opacity: 70%">Tuesday <img src="public/images/animated/cloudy.svg" alt=""></div>
+      <div class="h-card" style=" color: #585858; opacity: 70%">Friday <img src="public/images/animated/cloudy-day-3.svg" alt=""></div>
+    </div><br><br>
   </section>
   <footer id="contact">
     <div>
