@@ -63,3 +63,19 @@ searchbar.addEventListener("keydown", function (e) {
         foo(e.target.value);
     }
 });
+
+function clearKey(){
+  localStorage.removeItem("apikey");
+}
+
+function getKey() {
+  api_key = localStorage.getItem("apikey");
+  // console.log(api_key);
+  if (api_key == null){
+    api_key = prompt("Please enter api key:");
+    localStorage.setItem('apikey', api_key);
+  }else {
+    foo(locat);
+  }
+}
+getKey();
