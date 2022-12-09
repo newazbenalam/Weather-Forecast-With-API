@@ -1,4 +1,4 @@
-var api_key='94785620b46305861350a8d4c206fe98';
+var api_key='';
 var locat = 'Dhaka';
 
 function darkMode() {
