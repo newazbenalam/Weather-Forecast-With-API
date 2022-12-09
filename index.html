@@ -16,10 +16,7 @@
       <a href="#hero" class="day-bar active">Today</a>
       <a href="#week" class="day-bar #active">Week</a>
     </div>
-    <form action="" method="post">
-      <input class="text-area" placeholder="Location..." type="search" name="search" data-vaue="">
-      <button hidden type="submit"></button>
-    </form>
+      <input class="text-area" placeholder="Location..." id="searchbar" data-vaue="">
     <div>
       <!-- <a href="#" class="toggle-temp">27°C</a> -->
       <a href="#" onclick="darkMode()" class="dark-mode">☾</a>
@@ -45,7 +42,7 @@
             Null
           </div>
         </div>
-        <p class="day">Monday, </p>
+        <span id="weekday" class="day">Monday, </span><span id="stime">16:00</span> 
         <div id="locat" class="location" style="padding-bottom: 45px;">
           Dhakka, Null
         </div>
