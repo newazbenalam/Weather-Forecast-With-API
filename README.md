@@ -10,6 +10,7 @@
 
 ### ✨ [Demo](https://newazbenalam.github.io/Weather-Forecast-With-API/)
 ![alt text](https://github.com/newazbenalam/Weather-Forecast-With-API/blob/master/public/screenshot/Web%20capture_9-12-2022_1796_127.0.0.1.jpeg)
+![alt text](https://github.com/newazbenalam/Weather-Forecast-With-API/blob/master/public/screenshot/Web%20capture_9-12-2022_202623_newazbenalam.github.io.jpeg)
 
 ## Install
 
