@@ -74,8 +74,8 @@ function getKey() {
   if (api_key == null){
     api_key = prompt("Please enter api key:");
     localStorage.setItem('apikey', api_key);
-  }else {
-    foo(locat);
   }
+  foo(locat);
 }
-getKey();
+setTimeout(() => { getKey(); }, 1000);
+
