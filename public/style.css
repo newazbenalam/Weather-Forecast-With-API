@@ -338,7 +338,6 @@ footer div:nth-child(1) div{
     font-size: large;
   }
   hero-row .day::after{
-    content: "16:00";
     opacity: 80%;
   }
   .weather-preview {
