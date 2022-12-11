@@ -1,4 +1,4 @@
-var api_key='2399352d04a2eceb5b84ee8d5e7be2cc';
+var api_key='';
 var locat = 'Dhaka';
 
 function darkMode() {
@@ -125,5 +125,5 @@ function getKey() {
   foo(locat);
   fetchCast(locat);
 }
-// setTimeout(() => { getKey(); }, 1000);
+setTimeout(() => { getKey(); }, 1000);
 
