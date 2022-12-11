@@ -197,6 +197,21 @@ hero-row{
   flex-direction: row;
 }
 
+#f-condition {
+  font-weight: 500;
+  opacity: 85%;
+  font-size: medium;
+  /* position: relative; */
+  padding: 5px 0px;;
+  /* bottom: 30px; */
+}
+
+#f-max-temp, #f-min-temp{
+  margin-left: 5px;
+  /* text-align: center; */
+  /* margin: auto; */
+}
+
 .temp-indicator {
   font-size: 8rem;
   font-weight: 300;
@@ -226,6 +241,7 @@ hero-row{
 }
 
 .h-card {
+  cursor: pointer;
   background-color: #f7fffbd5;
   color: #adadadd3;
   width: 120px;
@@ -265,6 +281,53 @@ hero-row{
   opacity: 99%;
 }
 
+.t-value{
+  position: relative;
+  font-size: 0.8rem;
+  bottom: 15px;
+  /* display: block; */
+  /* margin: auto; */
+  text-align: center;
+  /* padding-bottom: 10px; */
+  /* bottom: 10px; */
+  color: var(--text-color);
+  opacity: 99%;
+}
+
+.forecast-box {
+  position: relative;
+  /* height: 250px; */
+  /* width: 100%; */
+  /* border: #2c2d36 1px solid; */
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0px;
+  /* padding-top: 10%; */
+  margin: 0 14% 5% 14%;
+  background-color: #f7fffb57;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.w-card {
+  background-color: #f7fffbd5;
+  color: #adadadd3;
+  flex-grow: 1;
+  flex-shrink: 1;
+  /* width: 50px; */
+  /* height: 100%; */
+  height: 220px;
+  /* border-radius: 10px; */
+  /* margin-top: 20px; */
+  /* filter: drop-shadow(0px 0px 100px #87878885); */
+}
+#f-temp {
+  opacity: 85%;
+  color: #2c2d36;
+}
 
 footer {
   display: flex;
@@ -285,7 +348,7 @@ footer div:nth-child(1) div{
   justify-items: center;
 }
 
-@media (max-width: 1055px) {
+@media (max-width: 1474px) {
   .text-area, form {
     display: none;
   }
@@ -293,9 +356,9 @@ footer div:nth-child(1) div{
     padding:0px 1% !important;
     width: 98%;
   }
-  .nav-title::after{
+  /* .nav-title::after{
     content: none;
-  }
+  } */
   .weekly-card{
     padding: 0px 10%;
   }
@@ -324,7 +387,10 @@ footer div:nth-child(1) div{
   }
 }
 
-@media (max-width: 660px) {
+@media (max-width: 875px) {
+  .nav-title::after{
+    content: none;
+  }
   hero-row  {
     flex-direction: column !important;
     width: 100%;
@@ -348,4 +414,14 @@ footer div:nth-child(1) div{
     z-index: 0;
     opacity: 75%;
   }
+}
+
+
+.paused {
+  -webkit-animation: none !important;
+  -moz-animation: none !important;
+  -o-animation: none !important;
+  -ms-animation: none !important;
+  animation: none !important;
+  animation-play-state: paused !important;
 }

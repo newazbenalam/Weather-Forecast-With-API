@@ -28,7 +28,7 @@
     <hero-row>
       <div>
         <div>
-          <img class="weather-preview" src="public/images/animated/rainy-2.svg" alt="temperature">
+          <img class="weather-preview"  src="public/images/animated/rainy-2.svg" alt="temperature">
           <div class="" style="position: relative; display: flex; justify-content: center; flex-wrap: unwarp;  bottom: -50px; transform: scale(0.7); gap: 0; min-width: 253px; margin: auto;">
             <div class="t-card h-card" style="background: none; width: 100px;" ><p>Min Temp</p>
               <p id="min_temp" class="value" style=" font-size: 1.5rem;">5</p>
@@ -39,7 +39,7 @@
           </div>
           <h1 id="temp" class="temp-indicator">25°C</h1>
           <div id="condition" style="font-weight: 500; opacity: 65%; position: relative; bottom: 30px;">
-            Null
+            Haze
           </div>
         </div>
         <span id="weekday" class="day">Monday, </span><span id="stime">16:00</span> 
@@ -48,11 +48,62 @@
         </div>
       </div>
       <div>
-        <p style="margin-bottom: 20px; filter: drop-shadow(0px 0px 100px #929094bb); font-weight: 500;">Today's Highlight</p>
-        <section>
+        <p style="margin-bottom: 15px; filter: drop-shadow(0px 0px 100px #929094bb); font-weight: 500;">6 Hourly Forecast</p>
+        <div class="forecast-box">
+          <div class="w-card" style="padding-top: 15px;"><p id="f-temp">time 1</p>
+            <img style="margin: -5px 0px -20px 0px; filter: opacity(70%);" src="public/images/animated/cloudy-day-3.svg" alt="">
+            <div id="f-condition" style=" color: #585858;font-weight: 400;">
+              Haze
+            </div>
+            <div>
+              <span id="f-max-temp" class="value">15</span><span class="t-value">°C</span>
+            </div>
+            <div>
+              <span id="f-min-temp" class="value" style="opacity: 50%; font-size: 1.2rem;">15</span><span class="t-value" style="bottom: 7px; font-size: 0.7rem;">°C</span>
+            </div>
+          </div>
+          <div class="w-card" style="padding-top: 15px;"><p id="f-temp">time 1</p>
+            <img style="margin: -5px 0px -20px 0px; filter: opacity(70%);" src="public/images/animated/cloudy-day-3.svg" alt="">
+            <div id="f-condition" style=" color: #585858;font-weight: 400;">
+              Haze
+            </div>
+            <div>
+              <span id="f-max-temp" class="value">15</span><span class="t-value">°C</span>
+            </div>
+            <div>
+              <span id="f-min-temp" class="value" style="opacity: 50%; font-size: 1.2rem;">15</span><span class="t-value" style="bottom: 7px; font-size: 0.7rem;">°C</span>
+            </div>
+          </div>
+          <div class="w-card" style="padding-top: 15px;"><p id="f-temp">time 1</p>
+            <img style="margin: -5px 0px -20px 0px; filter: opacity(70%);" src="public/images/animated/cloudy-day-3.svg" alt="">
+            <div id="f-condition" style=" color: #585858;font-weight: 400;">
+              Haze
+            </div>
+            <div>
+              <span id="f-max-temp" class="value">15</span><span class="t-value">°C</span>
+            </div>
+            <div>
+              <span id="f-min-temp" class="value" style="opacity: 50%; font-size: 1.2rem;">15</span><span class="t-value" style="bottom: 7px; font-size: 0.7rem;">°C</span>
+            </div>
+          </div>
+          <div class="w-card" style="padding-top: 15px;"><p id="f-temp">time 1</p>
+            <img style="margin: -5px 0px -20px 0px; filter: opacity(70%);" src="public/images/animated/cloudy-day-3.svg" alt="">
+            <div id="f-condition" style=" color: #585858;font-weight: 400;">
+              Haze
+            </div>
+            <div>
+              <span id="f-max-temp" class="value">15</span><span class="t-value">°C</span>
+            </div>
+            <div>
+              <span id="f-min-temp" class="value" style="opacity: 50%; font-size: 1.2rem;">15</span><span class="t-value" style="bottom: 7px; font-size: 0.7rem;">°C</span>
+            </div>
+          </div>
+        </div>
+        <p id="highlight" style="margin-bottom: 15px; filter: drop-shadow(0px 0px 100px #929094bb); font-weight: 500;">Today's Highlight</p>
+        <div>
           <div class="weekly-card">
-            <div class="h-card"><p>UV Index</p>
-              <p id="uv_index" class="value">5</p>
+            <div class="h-card"><p>Clouds</p>
+              <p id="clouds" class="value">1020</p>
             </div>
             <div class="h-card"><p>Wind Status</p>
               <p id="wind"   class="value" style="top: -5px;">7.70</p><p style="opacity: 75%; color: var(--text-color); position: relative; bottom: 7px; font-size: 0.6rem;">km/h</p>
@@ -72,8 +123,8 @@
             <div class="h-card"><p>Visibility</p>
               <p id="visibility" class="value">1020</p>
             </div>
-            <div class="h-card"><p>Clouds</p>
-              <p id="clouds" class="value">1020</p>
+            <div class="h-card"><p>UV Index</p>
+              <p id="uv_index" class="value">5</p>
             </div>
           </div>
       </div>
@@ -82,12 +133,12 @@
   <section id="week">
     <div><h4>Weekly Forecast</h4></div>
     <div class="weekly-card">
-      <div class="h-card" style=" color: #585858; opacity: 70%">Sunday <img src="public/images/animated/cloudy-day-3.svg" alt=""></div>
-      <div class="h-card" style=" color: #585858; opacity: 70%">Monday <img src="public/images/animated/rainy-7.svg" alt=""></div>
-      <div class="h-card" style=" color: #585858; opacity: 70%">Tuesday <img src="public/images/animated/snowy-2.svg" alt=""></div>
-      <div class="h-card" style=" color: #585858; opacity: 70%">Wedneday <img src="public/images/animated/thunder.svg" alt=""></div>
-      <div class="h-card" style=" color: #585858; opacity: 70%">Tuesday <img src="public/images/animated/cloudy.svg" alt=""></div>
-      <div class="h-card" style=" color: #585858; opacity: 70%">Friday <img src="public/images/animated/cloudy-day-3.svg" alt=""></div>
+      <div id="h-card" class="h-card" style=" color: #585858; opacity: 70%;" value="Sunday">Sunday<img src="public/images/animated/cloudy-day-3.svg" alt=""></div>
+      <div id="h-card" class="h-card" style=" color: #585858; opacity: 70%;" value="Monday">Monday<img src="public/images/animated/rainy-7.svg" alt=""></div>
+      <div id="h-card" class="h-card" style=" color: #585858; opacity: 70%;" value="Tuesday">Tuesday<img src="public/images/animated/snowy-2.svg" alt=""></div>
+      <div id="h-card" class="h-card" style=" color: #585858; opacity: 70%;" value="Wedneday">Wedneday<img src="public/images/animated/thunder.svg" alt=""></div>
+      <div id="h-card" class="h-card" style=" color: #585858; opacity: 70%;" value="Thursday">Thursday<img src="public/images/animated/cloudy.svg" alt=""></div>
+      <div id="h-card" class="h-card" style=" color: #585858; opacity: 70%;" value="Friday">Friday<img src="public/images/animated/cloudy-day-3.svg" alt=""></div>
     </div><br><br>
   </section>
   <footer id="contact">
