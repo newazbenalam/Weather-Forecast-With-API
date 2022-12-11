@@ -67,15 +67,15 @@ function cast() {
   document.querySelectorAll('[id=f-temp]').forEach(element => {
     element.textContent = (new Date((castObj.list[i+=inctement].dt)*1000)).toLocaleString("default", { weekday: "long", timeZone: "UTC" });
   });
-  i=0;
+  i = -8;
   document.querySelectorAll('[id=f-max-temp]').forEach(element => {
     element.textContent = parseInt(castObj.list[i+=inctement].main.temp_max + 1);
   });
-  i=0;
+  i = -8;
   document.querySelectorAll('[id=f-min-temp]').forEach(element => {
     element.textContent = parseInt(castObj.list[i+=inctement].main.temp_min);
   });
-  i=0;
+  i = -8;
   document.querySelectorAll('[id=f-condition]').forEach(element => {
     element.textContent = castObj.list[i+=inctement].weather[0].main;
   });
