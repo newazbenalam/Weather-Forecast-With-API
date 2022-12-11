@@ -63,21 +63,21 @@ async function fetchCast(location){
 }
 
 function cast() {
-  let i = 0;
+  let i = -8, inctement = 8;
   document.querySelectorAll('[id=f-temp]').forEach(element => {
-    element.textContent = (new Date((castObj.list[i+=2].dt)*1000)).toLocaleString("default", {hour12: false, hour: '2-digit', minute: '2-digit', timeZone: "UTC"});
+    element.textContent = (new Date((castObj.list[i+=inctement].dt)*1000)).toLocaleString("default", { weekday: "long", timeZone: "UTC" });
   });
   i=0;
   document.querySelectorAll('[id=f-max-temp]').forEach(element => {
-    element.textContent = parseInt(castObj.list[i+=2].main.temp_max + 1);
+    element.textContent = parseInt(castObj.list[i+=inctement].main.temp_max + 1);
   });
   i=0;
   document.querySelectorAll('[id=f-min-temp]').forEach(element => {
-    element.textContent = parseInt(castObj.list[i+=2].main.temp_min);
+    element.textContent = parseInt(castObj.list[i+=inctement].main.temp_min);
   });
   i=0;
   document.querySelectorAll('[id=f-condition]').forEach(element => {
-    element.textContent = castObj.list[i+=2].weather[0].main;
+    element.textContent = castObj.list[i+=inctement].weather[0].main;
   });
 
 }
